@@ -97,10 +97,11 @@ const EMPTY_FORM: FormState = {
   acceptedTerms: false,
 };
 
-interface Submission extends FormState {
+interface Submission {
   id: string;
   created_at: string;
   total_charges: number;
+  [key: string]: unknown;
 }
 
 /* ------------------------------------------------------------------ */
