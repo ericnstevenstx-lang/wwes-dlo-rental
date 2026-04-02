@@ -101,7 +101,7 @@ interface Submission {
   id: string;
   created_at: string;
   total_charges: number;
-  [key: string]: unknown;
+  [key: string]: any;
 }
 
 /* ------------------------------------------------------------------ */
